@@ -1,0 +1,438 @@
+ Looking for Control file : ctr4.gcmc
+Welcome to MuSiC (GCMC implementation)
+Reading from control file ctr4.gcmc
+ Initializing General Parameters
+------------------------------------------------------------
+The ATOMS structure:
+  No. of atom types:     3
+    Atom Name           : Nitrogen
+    Atom Symbol         : N2
+    Atom File           : Nitrogen.atm
+    Atom Mass           :    14.00
+    sscharge, szcharge  :   0.0000  0.0000
+    Required # of bonds :   0
+    Ion Type            : NONE 
+ 
+    Atom Name           : Oxygen
+    Atom Symbol         : O
+    Atom File           : Oxygen.atm
+    Atom Mass           :    16.00
+    sscharge, szcharge  :  -1.0000 -1.0000
+    Required # of bonds :   2
+    Ion Type            : NONE 
+ 
+    Atom Name           : Silicon
+    Atom Symbol         : S
+    Atom File           : Silicon.atm
+    Atom Mass           :    28.09
+    sscharge, szcharge  :   0.0000  0.0000
+    Required # of bonds :   0
+    Ion Type            : NONE 
+------------------------------------------------------------
+    Reading molecule information for N2 from: /home/hermes/music4/sim5/molecules/N2.mol
+ molecule.F90 : 1097
+  Molecule will be rotated so that the principle axes 
+   will coincide with coordinate system axes
+ Generating Connections for N2                                              
+    Reading molecule information for sili from: /home/hermes/music4/sim5/molecules/sili.mol
+ molecule.F90 : 1097
+  Molecule will be rotated so that the principle axes 
+   will coincide with coordinate system axes
+------------------------------------------------------------
+The MOLECULES structure:
+  No. of molecule types:     2
+------------------------------------------------------------
+  Molecule Name       : N2
+  Molecule Mass       : 28.00
+  Molecule File       : N2.mol
+  Degrees of freedom  : 5
+  DOF origin          : Molecule_File
+  body axes atom nos  :    0   0   0
+  Number of atoms     : 2
+  Net Charge          : 0.0
+  Dipole Moment(debye): 0.000000000
+  Translation xform   : 0.00000   0.00000   0.00000
+  Rotational xform    : 
+    1.00000   0.00000   0.00000
+    0.00000   1.00000   0.00000
+    0.00000   0.00000   1.00000
+      Atom Name           : Nitrogen
+      Atom Type           :    1
+      Atom Position       :   0.0000  0.0000  0.0000
+      Equilibrium charge  :   0.0000
+      MD Set, type        :    0   0
+      Atom Name           : Nitrogen
+      Atom Type           :    1
+      Atom Position       :   1.0980  0.0000  0.0000
+      Equilibrium charge  :   0.0000
+      MD Set, type        :    0   0
+  Connection Information : 
+    Connection Information for N2                                              
+    Atom     1: No connections
+    Atom     2: No connections
+------------------------------------------------------------
+  Molecule Name       : sili
+  Molecule Mass       : 5768.2
+  Molecule File       : sili.mol
+  Degrees of freedom  : 864
+  DOF origin          : 3N_Calculation
+  Number of atoms     : 288
+  Net Charge          : 0.0
+  Dipole Moment(debye): 0.9E-11
+  Translation xform   : 0.00000   0.00000   0.00000
+  Rotational xform    : 
+    1.00000   0.00000   0.00000
+    0.00000   1.00000   0.00000
+    0.00000   0.00000   1.00000
+  Atom list omitted (natoms > 10)
+  Connection Information : 
+    No connectivity information for sili
+------------------------------------------------------------
+      The SIMCELL structure:
+      nx, ny, nz            :    2   2   3
+      ncells                :   12
+      ORTHORHOMBIC
+      edge lengths (Ang)    :    40.1400   39.8400   40.2600
+      cell angles (degrees) :    90.0000   90.0000   90.0000
+      origin shift (Ang)    : 0.0000   0.0000   0.0000
+      cell vector a         : 40.1400   0.0000   0.0000
+      cell vector b         : -0.0000  39.8400   0.0000
+      cell vector c         : -0.0000  -0.0000  40.2600
+      box width in (a,b,c)  :    40.1400   39.8400   40.2600
+      minimum width (Ang)   :    39.8400
+      volume (Angstroms^3)  : 64382.89
+------------------------------------------------------------
+Configuration Section 
+No. of species :      2
+  ----------------------------------------------------------
+  Species name : N2                                              
+    No. of molecules :      0
+    No. of atoms     :    2
+    Initial Config. Source : GCMC
+    Source Filename: NULL
+    ----------------------------------------------------------
+  Species name : sili                                            
+    No. of molecules :      1
+    No. of atoms     : 3456
+    Initial Config. Source : FIXED
+    Source Filename: NULL
+    ----------------------------------------------------------
+Initializing intra molecular info from molecule file: /home/hermes/music4/sim5/molecules/N2.mol
+ intramolecular.F90 :  197
+ intra filename passed isintramolecular_file                             xx
+ intramolecular.F90 :  203
+Initialized all intramolecular stuff for N2
+Initializing intra molecular info from molecule file: /home/hermes/music4/sim5/molecules/sili.mol
+ intramolecular.F90 :  197
+ intra filename passed isintramolecular_file                             xx
+ intramolecular.F90 :  203
+Initialized all intramolecular stuff for sili
+ Finished Initializing Intramolecular interactions
+ Initializing Species-Species interactions....
+ Finished Initializing Species-Species interactions.
+ Finished Initializing Ff interactions.
+ Calling ff_initCal
+ Call to ff_initCalc successful 
+  ------------------------------------------------------------
+  The "BASIC" FF information:
+  ------------------------------------------------------------
+  NON-COULOMBIC SPECIES-SPECIES pair parameters:
+  Information taken from: sorb_sorb_file
+    ------------------------------------------------------------
+    (1,1)  N2, N2:                    BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (1,1)  Nitrogen, Nitrogen:        LJ
+          Nitrogen-Nitrogen LJ parameters from SIGEPS
+            Sigma: 3.3200 Ang   Epsilon/k_Boltz: 36.400 K
+            A: 518843.9 kcal A^12/mol   B: 387.4434 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+    ------------------------------------------------------------
+    (1,2)  N2, sili:                  BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (1,1)  Nitrogen, Nitrogen:      OFF
+      (1,2)  Nitrogen, Oxygen:          LJ
+          Nitrogen-Oxygen LJ parameters from SIGEPS
+            Sigma: 3.0620 Ang   Epsilon/k_Boltz: 58.250 K
+            A: 314511.5 kcal A^12/mol   B: 381.5974 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (1,3)  Nitrogen, Silicon:         LJ
+          Nitrogen-Silicon LJ parameters from SIGEPS
+            Sigma: 1.0000 Ang   Epsilon/k_Boltz: 0.000 K
+            A: 0.00000 kcal A^12/mol   B: 0.00000 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (2,2)  Oxygen, Oxygen:          OFF
+      (2,3)  Oxygen, Silicon:         OFF
+      (3,3)  Silicon, Silicon:        OFF
+    ------------------------------------------------------------
+    (2,2)  sili, sili:                OFF
+  ------------------------------------------------------------
+  COULOMBIC SPECIES-SPECIES pair parameters:
+  Information taken from: sorb_sorb_file
+    ------------------------------------------------------------
+    (1,1)  N2, N2:                    OFF
+    ------------------------------------------------------------
+    (1,2)  N2, sili:                  OFF
+    ------------------------------------------------------------
+    (2,2)  sili, sili:                OFF
+  ------------------------------------------------------------
+  INTRAMOLECULAR information for each species 
+    ------------------------------------------------------------
+    Intramolecular information for N2:
+      Bond Stretching   :  OFF
+      Bond Bending      :  OFF
+      Torsion Angles    :  OFF
+      Intra Pairwise Pot:  OFF
+      Intra Coulombic Pot:  OFF
+      Constraints       :  OFF
+    ------------------------------------------------------------
+    Intramolecular information for sili:
+      Bond Stretching   :  OFF
+      Bond Bending      :  OFF
+      Torsion Angles    :  OFF
+      Intra Pairwise Pot:  OFF
+      Intra Coulombic Pot:  OFF
+      Constraints       :  OFF
+------------------------------------------------------------
+Initializing GCMC moves for: N2                                              
+ Initializing biasing details : cavity, bmap etc 
+ --------------- WARNING during bmap_cubeinit ---------------
+ bmap.F90 :  322
+ Automatically adjusting bmap energies here
+ maxnrgval :  0.396724495155476     
+ For biasing purposes all energies above this  will be converted to this value
+ --------------- END WARNING --------------------------------
+ Energies at the beginning of GCMC simulation: 
+   Species Name : N2                                              
+   Species Type : 1
+   Pairwise Energies(noncoul, coul) in kJ/mol
+                   N2   :   0.00000  0.00000
+                 sili   :   0.00000  0.00000
+   Intramolecular Energies (bs,bb,tor,ip,con,total) in kJ/mol
+      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+   Species Name : sili                                            
+   Species Type : 2
+   Pairwise Energies(noncoul, coul) in kJ/mol
+                   N2   :   0.00000  0.00000
+                 sili   :   0.00000  0.00000
+   Intramolecular Energies (bs,bb,tor,ip,con,total) in kJ/mol
+      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+------------------------------------------------------------
+The GCMC Parameters Section:
+  No. of iterations  :      1
+  No. of simulations :      1
+  Temperature(K)     :  308.000
+  No. of species     :      1
+  ------------------------------------------------------------
+  GCMC Moves Parameters:
+  ------------------------------------------------------------
+  Species Name: N2
+    Thermophysical simulation points:
+    Pressure  Fugacity     murti  B(Adams)
+   0.619E+03 0.619E+03   -13.849     2.237
+    Allowed Move Types and Parameters:
+      Basic Move type:    INSERT
+      Specific Move type: BINSERT
+        Rigid Molecule Biased-Insertion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.N2.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.N2.pmap
+              Cumulative Wt:  555291.88    
+              No. of tabulated cubelets:   149590
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    DELETE
+      Specific Move type: BDELETE
+        Rigid Molecule Deletion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.N2.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.N2.pmap
+              Cumulative Wt:  555291.88    
+              No. of tabulated cubelets:   149590
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    ROTATE
+      Specific Move type: RROTATE
+        Rigid Molecule Random-Rotation Parameters :
+        Scaling of Rotation increment not allowed.
+        Initial rotation-delta:      0.20000
+        Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    TRANSLATE
+      Specific Move type: RTRANSLATE
+        Rigid Molecule Random-Translation Parameters :
+        Scaling of Translation length allowed.
+        Initial translation length:      0.20000
+        Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+ 
+ 
+------------------------------------------------------------
+Beginning GCMC simulation number 1 of 1   (1000000 steps)
+------------------------------------------------------------
+The GCMC Simulation Parameters:
+  Simulation Number :    1
+  Configuration file: sili.N2.con.4
+  Restart file      : sili.N2.res.4
+  ------------------------------------------------------------
+  GCMC Species Parameters:
+    ----------------------------------------------------------
+    Species Name: N2
+      Press.(kPa)   Fugacity      murti   B(Adams)
+          618.700    618.700    -13.849      2.237
+    ----------------------------------------------------------
+
+
+  Macro-iteration number 100000 (100000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.489   (12254 of 25073)  
+      DELETE (BDELETE)          Acc. Ratio: 0.486   (12226 of 25153)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.930   (23231 of 24990)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.501   (12421 of 24783)  Max disp:  0.681
+      Number of Molecules (ins, blk, cum, stdd)  28.00  32.04  31.16   5.16
+ 
+  Macro-iteration number 200000 (200000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.487   (24387 of 50120)  
+      DELETE (BDELETE)          Acc. Ratio: 0.485   (24350 of 50215)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.928   (46358 of 49939)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.498   (24744 of 49725)  Max disp:  1.909
+      Number of Molecules (ins, blk, cum, stdd)  37.00  30.96  31.25   5.22
+ 
+  Macro-iteration number 300000 (300000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.487   (36595 of 75147)  
+      DELETE (BDELETE)          Acc. Ratio: 0.484   (36561 of 75488)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.928   (69323 of 74702)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.501   (37386 of 74662)  Max disp:  0.555
+      Number of Molecules (ins, blk, cum, stdd)  34.00  28.40  31.34   5.17
+ 
+  Macro-iteration number 400000 (400000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (48829 of 100129)  
+      DELETE (BDELETE)          Acc. Ratio: 0.484   (48802 of 100779)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.928   (92484 of 99656)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.491   (48838 of 99435)  Max disp:  0.316
+      Number of Molecules (ins, blk, cum, stdd)  27.00  29.96  31.37   5.09
+ 
+  Macro-iteration number 500000 (500000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.487   (61046 of 125233)  
+      DELETE (BDELETE)          Acc. Ratio: 0.485   (61010 of 125815)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.927   (115628 of 124677)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.503   (62471 of 124274)  Max disp:  2.000
+      Number of Molecules (ins, blk, cum, stdd)  36.00  32.42  31.46   5.07
+ 
+  Macro-iteration number 600000 (600000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (73356 of 150338)  
+      DELETE (BDELETE)          Acc. Ratio: 0.487   (73329 of 150721)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.927   (138613 of 149583)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.492   (73531 of 149357)  Max disp:  0.300
+      Number of Molecules (ins, blk, cum, stdd)  27.00  31.12  31.51   5.08
+ 
+  Macro-iteration number 700000 (700000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (85494 of 175317)  
+      DELETE (BDELETE)          Acc. Ratio: 0.486   (85470 of 175691)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.927   (161717 of 174524)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.497   (86646 of 174467)  Max disp:  0.527
+      Number of Molecules (ins, blk, cum, stdd)  24.00  31.88  31.52   5.11
+ 
+  Macro-iteration number 800000 (800000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (97798 of 200585)  
+      DELETE (BDELETE)          Acc. Ratio: 0.488   (97762 of 200391)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.926   (184848 of 199530)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.496   (98978 of 199493)  Max disp:  1.619
+      Number of Molecules (ins, blk, cum, stdd)  36.00  33.79  31.57   5.11
+ 
+  Macro-iteration number 900000 (900000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (109991 of 225533)  
+      DELETE (BDELETE)          Acc. Ratio: 0.488   (109960 of 225481)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.926   (208090 of 224613)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.506   (113555 of 224372)  Max disp:  0.580
+      Number of Molecules (ins, blk, cum, stdd)  31.00  32.13  31.51   5.13
+ 
+  Macro-iteration number 1000000 (1000000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: N2    Pressure: 618.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.488   (122188 of 250564)  
+      DELETE (BDELETE)          Acc. Ratio: 0.488   (122154 of 250565)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.926   (231076 of 249540)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.491   (122310 of 249330)  Max disp:  0.927
+      Number of Molecules (ins, blk, cum, stdd)  34.00  32.36  31.50   5.12
+ 
+ ________ ACTUAL ENERGIES    _____________
+    Energy:         -352.395
+     Coul:  0.000E+00 0.000E+00
+    NCoul: -0.526E+01-0.347E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+ ________ STORED ENERGIES    _____________
+    Energy:         -352.395
+     Coul:  0.000E+00 0.000E+00
+    NCoul: -0.526E+01-0.347E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ ________ ACTUAL ENERGIES    _____________
+    Energy:         -347.130
+     Coul:  0.000E+00 0.000E+00
+    NCoul: -0.347E+03 0.000E+00
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+ ________ STORED ENERGIES    _____________
+    Energy:         -347.130
+     Coul:  0.000E+00 0.000E+00
+    NCoul: -0.347E+03 0.000E+00
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+------------------------------------------------------------
+Ending GCMC simulation number 1    Nrg dev check: 0.251E-11
+  N2:  P (kPa): 618.7    loading (molec/uc): 2.625
+------------------------------------------------------------
+ music.F90 :  297
+Main Program   Time: 1.9676 hrs   Number of calls: 1   Time per call: 1.9676 hrs

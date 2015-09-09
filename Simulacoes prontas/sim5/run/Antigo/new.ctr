@@ -1,0 +1,81 @@
+------ General Information ------------------------------------------
+Nitrogen molecule in Silicalite
+1000000               # No. of iterations
+100000                # No. of steps between writes to output/log file
+100000                # No. of steps between writes to crash file
+5000                  # No. of steps between writes to config. file
+1                     # Start numbering simulations from . ====AQUI===
+23421                  # Iseed
+1                     # specifies contents of config file,
+sili.N2.res           # Restart File to write to
+sili.N2.con           # Configuration File
+------ Atomic Types --------------------------------------------------
+3                     # number of atomic types
+
+Nitrogen              # atom type
+Nitrogen.atm          # basic atom info file
+
+Oxygen                # atom type
+Oxygen.atm            # basic atom info file
+
+Silicon               # atom type
+Silicon.atm           # basic atom info file
+
+------ Molecule Types -------------------------------------------------
+2                     # number of sorbate types
+
+N2                    # sorbate
+N2.mol                # sorbate coordinates file
+
+sili                  # sorbate
+sili.mol              # sorbate coordinates file
+------ Simulation Cell Information ------------------------------------
+sili                  # Fundamental cell file
+2, 2, 3               # No. of unit cells in x, y, z direction
+1, 1, 1               # (1 = Periodic) in x, y, z
+------ Forcefield Information -------------------------------------------
+BASIC
+SPC
+atom_atom_file        # atom-atom interaction file
+sorb_sorb_file        # sorbate-sorbate interaction file
+intramolecular_file   # intramolecular interaction file/specification
+------ Ideal Parameters -----------------------------------------------
+Ideal                 # Equation of State
+1                     # no. of sorbates
+N2               # Sorbate Name
+------ GCMC Information -----------------------------------------------
+1                     # No. of iterations
+298.                  # temperature
+Ideal Parameters      # Tag for the equation of state (NULL = Ideal Gas)
+1                     # No. of simulation points ===AQUI===
+5000                  # Block size for statistics
+1                     # no. of sorbates
+          -------------------------
+N2                    # Sorbate Name
+fugacity1.dat          #  pressure    ====AQUI====
+Null                  # sitemap filename (Null = no sitemap)
+4                     # no of gcmc movetypes
+1.0, 1.0, 4.0, 1.0         # move type weights
+BINSERT               # type of move.1
+sili.N2.pmap          # Bias Potential File, CAVITY-> Implies cavitybias
+298.                  # Bias temperature for the bmap
+BDELETE               # type of move.2
+RROTATE               # type of move.3
+0.2, 0                # Delta Rotate, adjust delta option (0=NO, 1=YES)
+RTRANSLATE            # type of move.4
+0.2, 1                # Delta Translate, adjust delta option (0=NO, 1=YES)
+------ Configuration Initialization -------------------------------------
+N2                    # Sorbate_Type
+GCMC NULL             # RESTARTFILE ETS4K3224.CH4.res.2     #Restart file
+sili                  # Sorbate_Type
+FIXED NULL
+--------  Main Datafile Information --------
+Energy, position, pair_energy  # contents of datafile
+
+
+
+
+
+
+
+

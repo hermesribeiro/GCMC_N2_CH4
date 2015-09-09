@@ -1,0 +1,15 @@
+ #------------OVERALL ISOTHERM-------------
+# Molecule : N2
+ #  Pressure                  loading   
+ #  kpa(1 st gcmc species)    (molec/uc)
+99.960000000000             0.5607143
+498.90000000000             2.5125000
+995.70000000000             4.3916667
+1491.0000000000             5.7077381
+1984.0000000000             6.8583333
+2475.0000000000             7.6184524
+# Results of a Langmuir Fit, fug= K * z / (z_max -z)
+# Where K is is kPa, z , and z_max  are zeo-loadings in molec/uc
+# K =2993.1856170778 ; z_max        17.36026
+# % Error in loading          1.41372
+ 

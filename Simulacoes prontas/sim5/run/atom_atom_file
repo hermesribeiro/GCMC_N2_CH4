@@ -1,0 +1,16 @@
+Methane   Methane   LJ SIG@3.72   EPS@158.5   HICUT@12.  
+Methane   Oxygen    LJ SIG@3.47   EPS@115.0   HICUT@12.
+Methane   Nitrogen  LJ SIG@3.52   EPS@75.96   HICUT@12.
+Nitrogen  Nitrogen  LJ SIG@3.32   EPS@36.4    HICUT@12.  
+Nitrogen  Oxygen    LJ SIG@3.062  EPS@58.25   HICUT@12.
+Methane   Silicon   LJ SIG@1.     EPS@0.      HICUT@12.
+Nitrogen  Silicon   LJ SIG@1.     EPS@0.      HICUT@12.
+
+#Methane   Silicon  OFF
+#Nitrogen  Silicon  OFF
+#Oxygen    Oxygen   OFF
+#Oxygen    Silicon  OFF
+#Silicon   Silicon  OFF
+
+
+

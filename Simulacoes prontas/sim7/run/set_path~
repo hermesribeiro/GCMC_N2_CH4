@@ -1,0 +1,6 @@
+#!/bin/sh
+export ATOMSDIR=~/music4/sim5/atoms
+export MOLSDIR=~/music4/sim5/molecules
+export PMAPDIR=~/music4/sim5/pmaps
+
+

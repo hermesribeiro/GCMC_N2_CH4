@@ -1,0 +1,8 @@
+### Nitrogen probe Molecule File
+
+Molecule_Name:  Probe                  
+
+Coord_Info: Listed Cartesian Rigid
+    1     # number of atoms in molecule
+    1    0.000000    0.000000    0.000000      Nitrogen   0.0  0   0   #x,y,z,name,set,type
+

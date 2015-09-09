@@ -1,0 +1,16 @@
+### Methane Molecule File
+
+Molecule_Name:  N2                  
+
+Coord_Info: Listed Cartesian Rigid
+    2     # number of atoms in molecule
+    1    0.000000    0.000000    0.000000      Nitrogen   0.0  0   0   #x,y,z,name,set,type
+    2    1.098000    0.000000    0.000000      Nitrogen   0.0  0   0   #x,y,z,name,set,type
+    
+Molecule_DOF: 5
+
+Connect_Info: Generate
+    1    # number of connection types listed
+    Nitrogen          Nitrogen    1.540000
+    
+

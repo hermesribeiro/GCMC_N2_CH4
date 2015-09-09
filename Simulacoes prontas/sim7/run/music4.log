@@ -1,0 +1,679 @@
+ Looking for Control file : ctr4.gcmc
+Welcome to MuSiC (GCMC implementation)
+Reading from control file ctr4.gcmc
+ Initializing General Parameters
+------------------------------------------------------------
+The ATOMS structure:
+  No. of atom types:     4
+    Atom Name           : Methane
+    Atom Symbol         : CH
+    Atom File           : Methane.atm
+    Atom Mass           :    16.00
+    sscharge, szcharge  :   0.0000  0.0000
+    Required # of bonds :   0
+    Ion Type            : NONE 
+ 
+    Atom Name           : Nitrogen
+    Atom Symbol         : N2
+    Atom File           : Nitrogen.atm
+    Atom Mass           :    14.00
+    sscharge, szcharge  :   0.0000  0.0000
+    Required # of bonds :   0
+    Ion Type            : NONE 
+ 
+    Atom Name           : Oxygen
+    Atom Symbol         : O
+    Atom File           : Oxygen.atm
+    Atom Mass           :    16.00
+    sscharge, szcharge  :  -1.0000 -1.0000
+    Required # of bonds :   2
+    Ion Type            : NONE 
+ 
+    Atom Name           : Silicon
+    Atom Symbol         : S
+    Atom File           : Silicon.atm
+    Atom Mass           :    28.09
+    sscharge, szcharge  :   0.0000  0.0000
+    Required # of bonds :   0
+    Ion Type            : NONE 
+------------------------------------------------------------
+    Reading molecule information for Methane from: /home/hermes/music4/sim7/molecules/Methane.mol
+ molecule.F90 : 1097
+  Molecule will be rotated so that the principle axes 
+   will coincide with coordinate system axes
+    Reading molecule information for N2 from: /home/hermes/music4/sim7/molecules/N2.mol
+ molecule.F90 : 1097
+  Molecule will be rotated so that the principle axes 
+   will coincide with coordinate system axes
+ Generating Connections for N2                                              
+    Reading molecule information for sili from: /home/hermes/music4/sim7/molecules/sili.mol
+ molecule.F90 : 1097
+  Molecule will be rotated so that the principle axes 
+   will coincide with coordinate system axes
+------------------------------------------------------------
+The MOLECULES structure:
+  No. of molecule types:     3
+------------------------------------------------------------
+  Molecule Name       : Methane
+  Molecule Mass       : 16.00
+  Molecule File       : Methane.mol
+  Degrees of freedom  : 3
+  DOF origin          : 3N_Calculation
+  body axes atom nos  :    0   0   0
+  Number of atoms     : 1
+  Net Charge          : 0.0
+  Dipole Moment(debye): 0.000000000
+  Translation xform   : 0.00000   0.00000   0.00000
+  Rotational xform    : 
+    1.00000   0.00000   0.00000
+    0.00000   1.00000   0.00000
+    0.00000   0.00000   1.00000
+      Atom Name           : Methane
+      Atom Type           :    1
+      Atom Position       :   0.0000  0.0000  0.0000
+      Equilibrium charge  :   0.0000
+      MD Set, type        :    0   0
+  Connection Information : 
+    No connectivity information for Methane
+------------------------------------------------------------
+  Molecule Name       : N2
+  Molecule Mass       : 28.00
+  Molecule File       : N2.mol
+  Degrees of freedom  : 5
+  DOF origin          : Molecule_File
+  body axes atom nos  :    0   0   0
+  Number of atoms     : 2
+  Net Charge          : 0.0
+  Dipole Moment(debye): 0.000000000
+  Translation xform   : 0.00000   0.00000   0.00000
+  Rotational xform    : 
+    1.00000   0.00000   0.00000
+    0.00000   1.00000   0.00000
+    0.00000   0.00000   1.00000
+      Atom Name           : Nitrogen
+      Atom Type           :    2
+      Atom Position       :   0.0000  0.0000  0.0000
+      Equilibrium charge  :   0.0000
+      MD Set, type        :    0   0
+      Atom Name           : Nitrogen
+      Atom Type           :    2
+      Atom Position       :   1.0980  0.0000  0.0000
+      Equilibrium charge  :   0.0000
+      MD Set, type        :    0   0
+  Connection Information : 
+    Connection Information for N2                                              
+    Atom     1: No connections
+    Atom     2: No connections
+------------------------------------------------------------
+  Molecule Name       : sili
+  Molecule Mass       : 5768.2
+  Molecule File       : sili.mol
+  Degrees of freedom  : 864
+  DOF origin          : 3N_Calculation
+  Number of atoms     : 288
+  Net Charge          : 0.0
+  Dipole Moment(debye): 0.9E-11
+  Translation xform   : 0.00000   0.00000   0.00000
+  Rotational xform    : 
+    1.00000   0.00000   0.00000
+    0.00000   1.00000   0.00000
+    0.00000   0.00000   1.00000
+  Atom list omitted (natoms > 10)
+  Connection Information : 
+    No connectivity information for sili
+------------------------------------------------------------
+      The SIMCELL structure:
+      nx, ny, nz            :    2   2   3
+      ncells                :   12
+      ORTHORHOMBIC
+      edge lengths (Ang)    :    40.1400   39.8400   40.2600
+      cell angles (degrees) :    90.0000   90.0000   90.0000
+      origin shift (Ang)    : 0.0000   0.0000   0.0000
+      cell vector a         : 40.1400   0.0000   0.0000
+      cell vector b         : -0.0000  39.8400   0.0000
+      cell vector c         : -0.0000  -0.0000  40.2600
+      box width in (a,b,c)  :    40.1400   39.8400   40.2600
+      minimum width (Ang)   :    39.8400
+      volume (Angstroms^3)  : 64382.89
+------------------------------------------------------------
+Configuration Section 
+No. of species :      3
+  ----------------------------------------------------------
+  Species name : Methane                                         
+    No. of molecules :      0
+    No. of atoms     :    1
+    Initial Config. Source : GCMC
+    Source Filename: NULL
+    ----------------------------------------------------------
+  Species name : N2                                              
+    No. of molecules :      0
+    No. of atoms     :    2
+    Initial Config. Source : GCMC
+    Source Filename: NULL
+    ----------------------------------------------------------
+  Species name : sili                                            
+    No. of molecules :      1
+    No. of atoms     : 3456
+    Initial Config. Source : FIXED
+    Source Filename: NULL
+    ----------------------------------------------------------
+Initializing intra molecular info from molecule file: /home/hermes/music4/sim7/molecules/Methane.mol
+ intramolecular.F90 :  197
+ intra filename passed isintramolecular_file                             xx
+ intramolecular.F90 :  203
+Initialized all intramolecular stuff for Methane
+Initializing intra molecular info from molecule file: /home/hermes/music4/sim7/molecules/N2.mol
+ intramolecular.F90 :  197
+ intra filename passed isintramolecular_file                             xx
+ intramolecular.F90 :  203
+Initialized all intramolecular stuff for N2
+Initializing intra molecular info from molecule file: /home/hermes/music4/sim7/molecules/sili.mol
+ intramolecular.F90 :  197
+ intra filename passed isintramolecular_file                             xx
+ intramolecular.F90 :  203
+Initialized all intramolecular stuff for sili
+ Finished Initializing Intramolecular interactions
+ Initializing Species-Species interactions....
+ Finished Initializing Species-Species interactions.
+ Finished Initializing Ff interactions.
+ Calling ff_initCal
+ Call to ff_initCalc successful 
+  ------------------------------------------------------------
+  The "BASIC" FF information:
+  ------------------------------------------------------------
+  NON-COULOMBIC SPECIES-SPECIES pair parameters:
+  Information taken from: sorb_sorb_file
+    ------------------------------------------------------------
+    (1,1)  Methane, Methane:          BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (1,1)  Methane, Methane:          LJ
+          Methane-Methane LJ parameters from SIGEPS
+            Sigma: 3.7300 Ang   Epsilon/k_Boltz: 148.00 K
+            A: 0.85E+07 kcal A^12/mol   B: 3168.057 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+    ------------------------------------------------------------
+    (1,2)  Methane, N2:               BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (1,1)  Methane, Methane:        OFF
+      (1,2)  Methane, Nitrogen:         LJ
+          Methane-Nitrogen LJ parameters from SIGEPS
+            Sigma: 3.5200 Ang   Epsilon/k_Boltz: 75.960 K
+            A: 0.22E+07 kcal A^12/mol   B: 1148.469 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (2,2)  Nitrogen, Nitrogen:      OFF
+    ------------------------------------------------------------
+    (1,3)  Methane, sili:             BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (1,1)  Methane, Methane:        OFF
+      (1,3)  Methane, Oxygen:           LJ
+          Methane-Oxygen LJ parameters from SIGEPS
+            Sigma: 3.6000 Ang   Epsilon/k_Boltz: 96.500 K
+            A: 0.36E+07 kcal A^12/mol   B: 1669.632 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (1,4)  Methane, Silicon:          LJ
+          Methane-Silicon LJ parameters from SIGEPS
+            Sigma: 1.0000 Ang   Epsilon/k_Boltz: 0.000 K
+            A: 0.00000 kcal A^12/mol   B: 0.00000 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (3,3)  Oxygen, Oxygen:          OFF
+      (3,4)  Oxygen, Silicon:         OFF
+      (4,4)  Silicon, Silicon:        OFF
+    ------------------------------------------------------------
+    (2,2)  N2, N2:                    BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (2,2)  Nitrogen, Nitrogen:        LJ
+          Nitrogen-Nitrogen LJ parameters from SIGEPS
+            Sigma: 3.3200 Ang   Epsilon/k_Boltz: 36.400 K
+            A: 518843.9 kcal A^12/mol   B: 387.4434 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+    ------------------------------------------------------------
+    (2,3)  N2, sili:                  BASIC
+      Input Line: NCOUL  BASIC  LJ  FAST  
+      Fast interaction?    T
+      COM-based cut-off?   F
+      COM-COM smoothing?   F
+      Atom-Atom PAIR PARAMETERS:
+        Information taken from: atom_atom_file
+      Overview by atomic pairs:
+      (2,2)  Nitrogen, Nitrogen:      OFF
+      (2,3)  Nitrogen, Oxygen:          LJ
+          Nitrogen-Oxygen LJ parameters from SIGEPS
+            Sigma: 3.0620 Ang   Epsilon/k_Boltz: 58.250 K
+            A: 314511.5 kcal A^12/mol   B: 381.5974 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (2,4)  Nitrogen, Silicon:         LJ
+          Nitrogen-Silicon LJ parameters from SIGEPS
+            Sigma: 1.0000 Ang   Epsilon/k_Boltz: 0.000 K
+            A: 0.00000 kcal A^12/mol   B: 0.00000 kcal A^6/mol
+            high cutoff: 12.00 Ang   low cutoff: 0.001 Ang
+      (3,3)  Oxygen, Oxygen:          OFF
+      (3,4)  Oxygen, Silicon:         OFF
+      (4,4)  Silicon, Silicon:        OFF
+    ------------------------------------------------------------
+    (3,3)  sili, sili:                OFF
+  ------------------------------------------------------------
+  COULOMBIC SPECIES-SPECIES pair parameters:
+  Information taken from: sorb_sorb_file
+    ------------------------------------------------------------
+    (1,1)  Methane, Methane:          OFF
+    ------------------------------------------------------------
+    (1,2)  Methane, N2:               OFF
+    ------------------------------------------------------------
+    (1,3)  Methane, sili:             OFF
+    ------------------------------------------------------------
+    (2,2)  N2, N2:                    OFF
+    ------------------------------------------------------------
+    (2,3)  N2, sili:                  OFF
+    ------------------------------------------------------------
+    (3,3)  sili, sili:                OFF
+  ------------------------------------------------------------
+  INTRAMOLECULAR information for each species 
+    ------------------------------------------------------------
+    Intramolecular information for Methane:
+      Bond Stretching   :  OFF
+      Bond Bending      :  OFF
+      Torsion Angles    :  OFF
+      Intra Pairwise Pot:  OFF
+      Intra Coulombic Pot:  OFF
+      Constraints       :  OFF
+    ------------------------------------------------------------
+    Intramolecular information for N2:
+      Bond Stretching   :  OFF
+      Bond Bending      :  OFF
+      Torsion Angles    :  OFF
+      Intra Pairwise Pot:  OFF
+      Intra Coulombic Pot:  OFF
+      Constraints       :  OFF
+    ------------------------------------------------------------
+    Intramolecular information for sili:
+      Bond Stretching   :  OFF
+      Bond Bending      :  OFF
+      Torsion Angles    :  OFF
+      Intra Pairwise Pot:  OFF
+      Intra Coulombic Pot:  OFF
+      Constraints       :  OFF
+------------------------------------------------------------
+Initializing GCMC moves for: Methane                                         
+ Initializing biasing details : cavity, bmap etc 
+ --------------- WARNING during bmap_cubeinit ---------------
+ bmap.F90 :  322
+ Automatically adjusting bmap energies here
+ maxnrgval :  -2.04557298343594     
+ For biasing purposes all energies above this  will be converted to this value
+ --------------- END WARNING --------------------------------
+Initializing GCMC moves for: N2                                              
+ Initializing biasing details : cavity, bmap etc 
+ --------------- WARNING during bmap_cubeinit ---------------
+ bmap.F90 :  322
+ Automatically adjusting bmap energies here
+ maxnrgval :  0.396724495155476     
+ For biasing purposes all energies above this  will be converted to this value
+ --------------- END WARNING --------------------------------
+ Energies at the beginning of GCMC simulation: 
+   Species Name : Methane                                         
+   Species Type : 1
+   Pairwise Energies(noncoul, coul) in kJ/mol
+              Methane   :   0.00000  0.00000
+                   N2   :   0.00000  0.00000
+                 sili   :   0.00000  0.00000
+   Intramolecular Energies (bs,bb,tor,ip,con,total) in kJ/mol
+      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+   Species Name : N2                                              
+   Species Type : 2
+   Pairwise Energies(noncoul, coul) in kJ/mol
+              Methane   :   0.00000  0.00000
+                   N2   :   0.00000  0.00000
+                 sili   :   0.00000  0.00000
+   Intramolecular Energies (bs,bb,tor,ip,con,total) in kJ/mol
+      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+   Species Name : sili                                            
+   Species Type : 3
+   Pairwise Energies(noncoul, coul) in kJ/mol
+              Methane   :   0.00000  0.00000
+                   N2   :   0.00000  0.00000
+                 sili   :   0.00000  0.00000
+   Intramolecular Energies (bs,bb,tor,ip,con,total) in kJ/mol
+      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+------------------------------------------------------------
+The GCMC Parameters Section:
+  No. of iterations  :      1
+  No. of simulations :      1
+  Temperature(K)     :  308.000
+  No. of species     :      2
+  ------------------------------------------------------------
+  GCMC Moves Parameters:
+  ------------------------------------------------------------
+  Species Name: Methane
+    Thermophysical simulation points:
+    Pressure  Fugacity     murti  B(Adams)
+   0.123E+03 0.123E+03   -14.628     0.619
+    Allowed Move Types and Parameters:
+      Basic Move type:    INSERT
+      Specific Move type: BINSERT
+        Rigid Molecule Biased-Insertion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.CH4.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.CH4.pmap
+              Cumulative Wt:  29636078.    
+              No. of tabulated cubelets:    90859
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    DELETE
+      Specific Move type: BDELETE
+        Rigid Molecule Deletion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.CH4.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.CH4.pmap
+              Cumulative Wt:  29636078.    
+              No. of tabulated cubelets:    90859
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    TRANSLATE
+      Specific Move type: RTRANSLATE
+        Rigid Molecule Random-Translation Parameters :
+        Scaling of Translation length allowed.
+        Initial translation length:      0.20000
+        Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+  ------------------------------------------------------------
+  ------------------------------------------------------------
+  Species Name: N2
+    Thermophysical simulation points:
+    Pressure  Fugacity     murti  B(Adams)
+   0.495E+03 0.495E+03   -14.072     2.014
+    Allowed Move Types and Parameters:
+      Basic Move type:    INSERT
+      Specific Move type: BINSERT
+        Rigid Molecule Biased-Insertion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.N2.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.N2.pmap
+              Cumulative Wt:  555291.88    
+              No. of tabulated cubelets:   149590
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    DELETE
+      Specific Move type: BDELETE
+        Rigid Molecule Deletion Parameters :
+          Type of bias: MAP_BIAS
+          Details of Bias for insertion: 
+          Bias map file: sili.N2.pmap
+          Bias Temperature, K:  308.000
+          Bias map details: 
+              Bias map filename: sili.N2.pmap
+              Cumulative Wt:  555291.88    
+              No. of tabulated cubelets:   149590
+              Cutoff Potential(kcal):     30.00000
+          Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    ROTATE
+      Specific Move type: RROTATE
+        Rigid Molecule Random-Rotation Parameters :
+        Scaling of Rotation increment not allowed.
+        Initial rotation-delta:      0.20000
+        Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+      Basic Move type:    TRANSLATE
+      Specific Move type: RTRANSLATE
+        Rigid Molecule Random-Translation Parameters :
+        Scaling of Translation length allowed.
+        Initial translation length:      0.20000
+        Maximum allowed energy: 0.10E+11 kcal/mol
+      ------------------------------------------------------------
+ 
+ 
+------------------------------------------------------------
+Beginning GCMC simulation number 1 of 1   (1000000 steps)
+------------------------------------------------------------
+The GCMC Simulation Parameters:
+  Simulation Number :    1
+  Configuration file: sili.MIX.con.4
+  Restart file      : sili.MIX.res.4
+  ------------------------------------------------------------
+  GCMC Species Parameters:
+    ----------------------------------------------------------
+    Species Name: Methane
+      Press.(kPa)   Fugacity      murti   B(Adams)
+          122.700    122.700    -14.628      0.619
+    ----------------------------------------------------------
+    Species Name: N2
+      Press.(kPa)   Fugacity      murti   B(Adams)
+          495.000    495.000    -14.072      2.014
+    ----------------------------------------------------------
+
+
+  Macro-iteration number 100000 (100000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.510   (8539 of 16756)  
+      DELETE (BDELETE)          Acc. Ratio: 0.521   (8509 of 16328)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.495   (8306 of 16771)  Max disp:  2.000
+      Number of Molecules (ins, blk, cum, stdd)  30.00  34.85  33.33   5.03
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.395   (4928 of 12484)  
+      DELETE (BDELETE)          Acc. Ratio: 0.388   (4905 of 12637)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (11538 of 12491)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.503   (6298 of 12527)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  23.00  20.58  20.81   4.44
+ 
+  Macro-iteration number 200000 (200000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.508   (16988 of 33427)  
+      DELETE (BDELETE)          Acc. Ratio: 0.516   (16964 of 32873)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.499   (16651 of 33373)  Max disp:  2.000
+      Number of Molecules (ins, blk, cum, stdd)  24.00  30.98  33.17   5.03
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.394   (9864 of 25028)  
+      DELETE (BDELETE)          Acc. Ratio: 0.391   (9848 of 25185)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (23303 of 25212)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.493   (12263 of 24896)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  16.00  23.81  21.38   4.50
+ 
+  Macro-iteration number 300000 (300000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.508   (25457 of 50064)  
+      DELETE (BDELETE)          Acc. Ratio: 0.514   (25420 of 49428)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.498   (24979 of 50208)  Max disp:  0.215
+      Number of Molecules (ins, blk, cum, stdd)  37.00  35.35  32.92   5.01
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.395   (14834 of 37507)  
+      DELETE (BDELETE)          Acc. Ratio: 0.393   (14810 of 37656)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.925   (34839 of 37669)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.494   (18489 of 37462)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  24.00  22.80  21.49   4.46
+ 
+  Macro-iteration number 400000 (400000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.507   (33856 of 66742)  
+      DELETE (BDELETE)          Acc. Ratio: 0.512   (33812 of 66003)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.509   (34082 of 66975)  Max disp:  0.332
+      Number of Molecules (ins, blk, cum, stdd)  44.00  31.75  32.82   5.05
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.396   (19838 of 50100)  
+      DELETE (BDELETE)          Acc. Ratio: 0.395   (19817 of 50209)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (46269 of 50050)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.492   (24581 of 49915)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  21.00  23.29  21.42   4.41
+ 
+  Macro-iteration number 500000 (500000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (42251 of 83494)  
+      DELETE (BDELETE)          Acc. Ratio: 0.511   (42214 of 82573)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.500   (41909 of 83776)  Max disp:  0.245
+      Number of Molecules (ins, blk, cum, stdd)  37.00  31.92  32.79   5.09
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.396   (24761 of 62582)  
+      DELETE (BDELETE)          Acc. Ratio: 0.395   (24738 of 62627)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (57791 of 62524)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.493   (30795 of 62418)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  23.00  21.49  21.53   4.41
+ 
+  Macro-iteration number 600000 (600000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (50666 of 100079)  
+      DELETE (BDELETE)          Acc. Ratio: 0.510   (50632 of 99204)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.503   (50643 of 100692)  Max disp:  0.252
+      Number of Molecules (ins, blk, cum, stdd)  34.00  33.69  32.82   5.08
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.395   (29638 of 74967)  
+      DELETE (BDELETE)          Acc. Ratio: 0.393   (29616 of 75268)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (69312 of 75039)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.494   (36905 of 74745)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  22.00  20.73  21.37   4.44
+ 
+  Macro-iteration number 700000 (700000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (59013 of 116676)  
+      DELETE (BDELETE)          Acc. Ratio: 0.509   (58979 of 115959)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.504   (59118 of 117195)  Max disp:  0.408
+      Number of Molecules (ins, blk, cum, stdd)  34.00  34.97  32.79   5.10
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.395   (34566 of 87560)  
+      DELETE (BDELETE)          Acc. Ratio: 0.394   (34543 of 87725)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (80892 of 87560)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.493   (43079 of 87319)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  23.00  20.14  21.49   4.45
+ 
+  Macro-iteration number 800000 (800000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (67462 of 133312)  
+      DELETE (BDELETE)          Acc. Ratio: 0.508   (67425 of 132599)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.501   (67067 of 133872)  Max disp:  0.848
+      Number of Molecules (ins, blk, cum, stdd)  37.00  31.89  32.72   5.15
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.396   (39576 of 99937)  
+      DELETE (BDELETE)          Acc. Ratio: 0.394   (39556 of 100341)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.923   (92178 of 99837)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.493   (49379 of 100096)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  20.00  19.65  21.48   4.44
+ 
+  Macro-iteration number 900000 (900000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (75922 of 149921)  
+      DELETE (BDELETE)          Acc. Ratio: 0.509   (75891 of 149156)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.491   (73971 of 150511)  Max disp:  0.848
+      Number of Molecules (ins, blk, cum, stdd)  31.00  34.61  32.67   5.19
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.397   (44682 of 112582)  
+      DELETE (BDELETE)          Acc. Ratio: 0.395   (44658 of 112953)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (103820 of 112410)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.493   (55433 of 112461)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  24.00  18.91  21.53   4.46
+ 
+  Macro-iteration number 1000000 (1000000 micro) of simulation 1
+  ------------------------------------------------------------
+  The GCMC Stats:
+    Species Name: Methane    Pressure: 122.70 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.506   (84320 of 166618)  
+      DELETE (BDELETE)          Acc. Ratio: 0.508   (84289 of 165830)  
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.500   (83635 of 167236)  Max disp:  0.534
+      Number of Molecules (ins, blk, cum, stdd)  31.00  30.00  32.71   5.18
+    Species Name: N2    Pressure: 495.00 kPa
+      INSERT (BINSERT)          Acc. Ratio: 0.397   (49618 of 125007)  
+      DELETE (BDELETE)          Acc. Ratio: 0.395   (49604 of 125558)  
+      ROTATE (RROTATE)          Acc. Ratio: 0.924   (115386 of 124918)  Max disp:  0.200
+      TRANSLATE (RTRANSLATE)    Acc. Ratio: 0.492   (61442 of 124827)  Max disp:  1.006
+      Number of Molecules (ins, blk, cum, stdd)  14.00  20.68  21.52   4.42
+ 
+ ________ ACTUAL ENERGIES    _____________
+    Energy:         -518.956
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul: -0.525E+01 0.392E+01-0.518E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+ ________ STORED ENERGIES    _____________
+    Energy:         -518.956
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul: -0.525E+01 0.392E+01-0.518E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ ________ ACTUAL ENERGIES    _____________
+    Energy:         -151.069
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul:  0.392E+01-0.382E+00-0.155E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+ ________ STORED ENERGIES    _____________
+    Energy:         -151.069
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul:  0.392E+01-0.382E+00-0.155E+03
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ ________ ACTUAL ENERGIES    _____________
+    Energy:         -672.225
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul: -0.518E+03-0.155E+03 0.000E+00
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+ 
+ ________ STORED ENERGIES    _____________
+    Energy:         -672.225
+     Coul:  0.000E+00 0.000E+00 0.000E+00
+    NCoul: -0.518E+03-0.155E+03 0.000E+00
+    Intramolecular:    bs       bb      tor       ip      con    total
+                      0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+------------------------------------------------------------
+Ending GCMC simulation number 1    Nrg dev check: 0.161E-10
+  Methane:  P (kPa): 122.7    loading (molec/uc): 2.726
+  N2:  P (kPa): 495.0    loading (molec/uc): 1.793
+------------------------------------------------------------
+ music.F90 :  297
+Main Program   Time: 1.4256 hrs   Number of calls: 1   Time per call: 1.4256 hrs

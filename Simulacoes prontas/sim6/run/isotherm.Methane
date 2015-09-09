@@ -1,0 +1,15 @@
+ #------------OVERALL ISOTHERM-------------
+# Molecule : Methane
+ #  Pressure                  loading   
+ #  kpa(1 st gcmc species)    (molec/uc)
+6.0000000000000             0.2261905
+404.30000000000             7.8232143
+801.20000000000            10.2011905
+1196.0000000000            11.4142857
+1590.0000000000            12.2035714
+1984.0000000000            12.8845238
+# Results of a Langmuir Fit, fug= K * z / (z_max -z)
+# Where K is is kPa, z , and z_max  are zeo-loadings in molec/uc
+# K =402.98074655416 ; z_max        15.41798
+# % Error in loading          0.64728
+ 

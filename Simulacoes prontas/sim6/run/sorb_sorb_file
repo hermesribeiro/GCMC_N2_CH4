@@ -1,0 +1,23 @@
+Methane Methane   NCOUL  BASIC  LJ  FAST
+Methane Methane   COUL   OFF
+
+Methane N2   NCOUL  BASIC  LJ  FAST
+Methane N2   COUL   OFF
+
+N2 N2   NCOUL  BASIC  LJ  FAST
+N2 N2   COUL   OFF
+
+Methane sili    NCOUL  BASIC LJ FAST    
+Methane sili    COUL   OFF 
+
+N2 sili    NCOUL  BASIC LJ FAST    
+N2 sili    COUL   OFF 
+
+sili   sili   NCOUL  OFF
+sili   sili   COUL   OFF
+
+Probe sili    NCOUL  BASIC LJ FAST    
+Probe sili    COUL   OFF
+
+Probe Probe    NCOUL  BASIC LJ FAST    
+Probe Probe    COUL   OFF
